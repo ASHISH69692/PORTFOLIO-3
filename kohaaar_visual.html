@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kohar Visual | Motion Graphics Editor</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #020617, #050a1f);
+    color: #fff;
+}
+
+/* HEADER */
+header {
+    padding: 20px 10%;
+    font-weight: 600;
+    color: #00aaff;
+}
+
+/* HERO */
+.hero {
+    padding: 100px 10%;
+}
+
+.hero-box {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+}
+
+/* Timeline Accent */
+.hero-box::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    height: 80%;
+    width: 3px;
+    background: #00aaff;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.hero span {
+    color: #00aaff;
+}
+
+.hero p {
+    margin: 20px 0;
+    color: #bbb;
+}
+
+/* BUTTON */
+.btn {
+    padding: 12px 25px;
+    background: #00aaff;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* SECTION */
+section {
+    padding: 60px 10%;
+}
+
+/* GLASS */
+.glass {
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* SKILLS */
+.skill {
+    margin: 15px 0;
+}
+
+.bar {
+    height: 6px;
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: #00aaff;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+}
+
+.project {
+    height: 180px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background: #111;
+}
+
+/* Film overlay */
+.project::after {
+    content: "▶";
+    position: absolute;
+    color: rgba(255,255,255,0.7);
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.project:hover::after {
+    opacity: 1;
+}
+
+.project:hover {
+    box-shadow: 0 0 15px rgba(0,170,255,0.5);
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+}
+
+.number {
+    color: #00aaff;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>Kohar Visual</header>
+
+<section class="hero">
+    <div class="hero-box">
+        <h1>I'm <span>Kohar</span></h1>
+        <p>
+            Motion Graphics Video Editor creating cinematic edits, smooth transitions,
+            and engaging content that stands out in today's fast-paced digital world.
+        </p>
+        <button class="btn">Hire Me</button>
+    </div>
+</section>
+
+<section>
+    <div class="glass">
+        <h2>About Me</h2>
+        <p>
+            18-year-old video editor with 8 months of experience in motion graphics and content editing.
+            I focus on storytelling, pacing, and visual impact to create engaging videos.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="glass">
+        <h2>Skills</h2>
+
+        <div class="skill">
+            Motion Graphics
+            <div class="bar"><div class="fill" style="width:85%"></div></div>
+        </div>
+
+        <div class="skill">
+            Video Editing
+            <div class="bar"><div class="fill" style="width:90%"></div></div>
+        </div>
+
+        <div class="skill">
+            Transitions & Effects
+            <div class="bar"><div class="fill" style="width:80%"></div></div>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="glass">
+        <h2>My Work</h2>
+        <div class="portfolio">
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="glass contact">
+        <h2>Contact</h2>
+        <p>Available for freelance & collaborations</p>
+        <div class="number">📞 9167296810</div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Kohar Visual | @kohar_visual
+</footer>
+
+</body>
+</html>
